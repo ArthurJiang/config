@@ -81,10 +81,10 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias e='/usr/local/bin/emacs'
-alias es='/usr/local/bin/emacs --load ~/.emacs.d/init.el -nw --daemon'
-alias ec='/usr/local/bin/emacsclient -t'
-alias ke='/usr/local/bin/emacsclient -e '(kill-emacs)''
+alias e='/usr/bin/emacs'
+alias es='/usr/bin/emacs --load ~/.emacs.d/init.el -nw --daemon'
+alias ec='/usr/bin/emacsclient -t'
+alias ke='/usr/bin/emacsclient -e "(kill-emacs)"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
