@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y software-properties-common
+RUN add-apt-repository ppa:kelleyk/emacs && apt-get update && apt-get install -y emacs25 && apt-get install -y git
+RUN apt-get install -y wget
+RUN mkdir ~/.emacs.d && git clone https://github.com/ArthurJiang/emacs.d.git  ~/.emacs.d
+# RUN apt-get install -y zsh && apt-get install -y git-core && wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+# RUN chsh -s `which zsh`
+RUN bash /root/.emacs.d/test-startup.sh
+RUN wget https://raw.githubusercontent.com/ArthurJiang/config/master/.bashrc -O ~/.bashrc
+RUN /usr/bin/emacs --load ~/.emacs.d/init.el -nw --daemon
