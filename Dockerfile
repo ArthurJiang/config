@@ -26,4 +26,4 @@ RUN apt-get install -y zsh && apt-get install -y git-core
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || echo hi
 RUN chsh -s `which zsh` && wget https://raw.githubusercontent.com/ArthurJiang/config/master/.zshrc -O ~/.zshrc
 
-CMD ["zsh"]
+# CMD ["zsh"]

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dev:
+    build: .
+    image: "dev/sjian:latest"
+    container_name: dev/sjian
+    volumes:
+      - ~/dev:/root/dev
