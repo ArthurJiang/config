@@ -26,4 +26,10 @@ RUN apt-get install -y zsh && apt-get install -y git-core
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || echo hi
 RUN chsh -s `which zsh` && wget https://raw.githubusercontent.com/ArthurJiang/config/master/.zshrc -O ~/.zshrc
 
-# CMD ["zsh"]
+RUN sudo apt install default-jre default-jre-headless
+RUN wget --no-check-certificate -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+RUN echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+RUN sudo apt update
+RUN sudo apt install neo4j
+
+CMD ["zsh"]
