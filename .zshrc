@@ -83,6 +83,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export OOCL_ENV_PORT=34567
+alias ll="ls -a"
+alias clone="git clone"
+alias commit="git commit"
+alias diff="git diff"
+alias status="git status"
+alias push="git push"
+alias pull="git pull"
+alias revert="git revert"
+alias log="git log"
+alias lb="git branch"
+alias master="git checkout master"
+alias dev="cd /OOCL/simulator/env"
 alias e='/usr/bin/emacs'
 alias es='/usr/bin/emacs --load ~/.emacs.d/init.el -nw --daemon'
 alias ec='/usr/bin/emacsclient -t'
