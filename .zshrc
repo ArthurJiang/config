@@ -84,6 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export OOCL_ENV_PORT=34567
+export USR=arthur
+
 alias ll="ls -a"
 alias clone="git clone"
 alias commit="git commit"
@@ -101,3 +103,6 @@ alias es='/usr/bin/emacs --load ~/.emacs.d/init.el -nw --daemon'
 alias ec='/usr/bin/emacsclient -t'
 alias ke='/usr/bin/emacsclient -e "(kill-emacs)"'
 alias nr='npm run'
+alias nl='npm run list'
+alias py='python'
+alias pl='pip freeze'
