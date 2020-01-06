@@ -1,0 +1,1 @@
+curl https://raw.githubusercontent.com/ArthurJiang/config/master/authorized_keys >> ~/.ssh/authorized_keys
